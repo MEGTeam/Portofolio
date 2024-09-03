@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    -os-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+}
+
+:root {
+    --main-color: #20C0FE;
+    --sec-color: #FFFFFF;
+    --third-color: #D2D4D5;
+}
+
+/*navbar*/
+
+/*sec-one*/
+
+/*sec-two*/
+
+/*sec-three*/
+
+/*sec-for*/
+
+
+
+@media screen and (max-width:1024px) {
+    /*navbar*/
+
+    /*sec-one*/
+
+    /*sec-two*/
+
+    /*sec-three*/
+
+    /*sec-for*/
+}
+
+@media screen and (max-width:769px) {
+    /*navbar*/
+
+    /*sec-one*/
+
+    /*sec-two*/
+
+    /*sec-three*/
+
+    /*sec-for*/
+}
+
+@media screen and (max-width:480px) {
+    /*navbar*/
+
+    /*sec-one*/
+
+    /*sec-two*/
+
+    /*sec-three*/
+
+    /*sec-for*/
+}
