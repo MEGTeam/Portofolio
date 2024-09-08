@@ -6,13 +6,33 @@
     padding: 0;
     font-family: "IBM Plex Sans", sans-serif;
     font-optical-sizing: auto;
-    font-style: italic;
 }
 
 :root {
     --main-color: #20C0FE;
     --sec-color: #FFFFFF;
     --third-color: #D2D4D5;
+}
+
+/* width scrpllbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #1ca8df;
 }
 
 /*navbar*/
@@ -24,8 +44,147 @@
 /*sec-three*/
 
 /*sec-for*/
+.fourths-sec {
+    display: inline-block;
+    width: 100%;
+    height: fit-content;
+    padding: 75px 0 150px 0;
+    background-image: url(../images/last-sec\ background.jpg);
+    background-size: cover;
+}
 
+.fourths-sec:nth-child(1) h1 {
+    font-size: 35px;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-align: center;
+}
 
+.fourths-sec:nth-child(1) hr {
+    width: 125px;
+    border: 3px solid var(--main-color);
+    border-bottom: hidden;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cards {
+    display: flex;
+    width: 86.46%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 50px 75px;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+    height: fit-content !important;
+}
+
+.cards>div {
+    width: 308px;
+    height: 276px;
+    padding: 25px 20px;
+    border-radius: 25px;
+}
+
+.cards h6 {
+    font-size: 25px;
+    color: var(--sec-color);
+    font-weight: 700;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.cards .profile {
+    width: 90px;
+    height: 90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cards p {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--sec-color);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cards>div:nth-child(1) {
+    background: linear-gradient(to bottom, #640D6B, #B51B75);
+}
+
+.cards>div:nth-child(2) {
+    background: linear-gradient(to bottom, #D989B5, #FFADBC);
+}
+
+.cards>div:nth-child(3) {
+    background: linear-gradient(to bottom, #97FEED, #0B666A);
+}
+
+.cards>div:nth-child(4) {
+    background: linear-gradient(to bottom, #921A40, #C75B7A);
+}
+
+.cards>div:nth-child(5) {
+    background: linear-gradient(to bottom, #FFC3A1, #A75D5D);
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 83.125%;
+    height: 208px;
+    padding: 25px 63px;
+    margin-top: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    background: linear-gradient(to right, #3A1078, #4E31AA, #2F58CD);
+    border-radius: 75px;
+}
+
+.contact-us > div{
+    flex-shrink: 1;
+    width: 51.45%;
+}
+
+.contact-us h6 {
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--sec-color);
+}
+
+.contact-us p {
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--sec-color);
+    margin-top: 15px;
+}
+
+.contact-us textarea {
+    resize: none;
+    width: 43.9776%;
+    flex-shrink: 2;
+    height: 134px;
+    overflow-y: hidden;
+    padding: 25px;
+    background-color: #30323E;
+    color: var(--third-color);
+    border: none;
+    font-size: 20px;
+    border-radius: 50px;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.contact-us textarea:focus {
+    outline: none;
+}
 
 @media screen and (max-width:1024px) {
     /*navbar*/
@@ -37,6 +196,32 @@
     /*sec-three*/
 
     /*sec-for*/
+
+    .cards {
+        padding: 0 124.5px;
+        width: 100%;
+        height: 978px;
+    }
+
+    .cards>div {
+        width: 350px;
+    }
+
+    .contact-us {
+        flex-direction: column;
+        width: 85.7%;
+        height: 361px;
+        padding: 45px;
+    }
+
+    .contact-us > div{
+        width: 100%;
+    }
+    .contact-us textarea {
+        width: 100%;
+        height: fit-content;
+        margin-top: 35px;
+    }
 }
 
 @media screen and (max-width:769px) {
@@ -49,6 +234,24 @@
     /*sec-three*/
 
     /*sec-for*/
+    .cards {
+        padding: 0 15px;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .cards>div {
+        width: 300px;
+    }
+
+    .contact-us {
+        width: 91%;
+        height: 371px;
+    }
+
+    .contact-us textarea {
+        height: 142px;
+    }
 }
 
 @media screen and (max-width:480px) {
@@ -61,4 +264,13 @@
     /*sec-three*/
 
     /*sec-for*/
+    .cards > div{
+        width: 67.7%;
+        height: fit-content;
+    }
+    
+    .contact-us{
+        width: 91.03%;
+        padding: 35px 25px;
+    }
 }
