@@ -38,12 +38,56 @@
 /*navbar*/
 
 /*sec-one*/
+.first-sec {
+    width: 100%;
+    height: fit-content;
+    padding: 75px 0;
+    background-color: black;
+}
+
+.first-sec h1 {
+    font-size: 35px;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-align: center
+}
+
+.first-sec hr {
+    width: 200px;
+    border: 3px solid var(--main-color);
+    border-bottom: hidden;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.first-sec>div:nth-child(2) {
+    width: 88.89%;
+    margin: 75px auto 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.first-sec p {
+    font-size: 2.5vw;
+    color: var(--third-color);
+    text-align: left;
+    line-height: 1.6;
+    width: 50.7%;
+    font-weight: 500;
+}
+
+.first-sec img {
+    width: 36.8%;
+}
 
 /*sec-two*/
 
 /*sec-three*/
 
-/*sec-for*/
+/*sec-four*/
 .fourths-sec {
     display: inline-block;
     width: 100%;
@@ -53,14 +97,14 @@
     background-size: cover;
 }
 
-.fourths-sec:nth-child(1) h1 {
+.fourths-sec h1 {
     font-size: 35px;
     color: #FFFFFF;
     font-weight: 700;
     text-align: center;
 }
 
-.fourths-sec:nth-child(1) hr {
+.fourths-sec hr {
     width: 125px;
     border: 3px solid var(--main-color);
     border-bottom: hidden;
@@ -148,7 +192,7 @@
     border-radius: 75px;
 }
 
-.contact-us > div{
+.contact-us>div {
     flex-shrink: 1;
     width: 51.45%;
 }
@@ -190,6 +234,22 @@
     /*navbar*/
 
     /*sec-one*/
+    .first-sec>div:nth-child(2) {
+        width: 100%;
+        padding: 0 75px;
+        flex-direction: column;
+    }
+
+    .first-sec p {
+        text-align: center;
+        width: 100%;
+        font-size: 3.4vw;
+    }
+
+    .first-sec img {
+        margin: 75px auto 0;
+        width: 472px;
+    }
 
     /*sec-two*/
 
@@ -214,9 +274,10 @@
         padding: 45px;
     }
 
-    .contact-us > div{
+    .contact-us>div {
         width: 100%;
     }
+
     .contact-us textarea {
         width: 100%;
         height: fit-content;
@@ -228,6 +289,13 @@
     /*navbar*/
 
     /*sec-one*/
+    .first-sec>div:nth-child(2) {
+        padding: 0 15px;
+    }
+
+    .first-sec img {
+        width: 61.46%;
+    }
 
     /*sec-two*/
 
@@ -258,18 +326,29 @@
     /*navbar*/
 
     /*sec-one*/
+    .first-sec>div:nth-child(2) {
+        padding: 0 14px;
+    }
+
+    .first-sec p{
+        font-size: 25px;
+    }
+
+    .first-sec img {
+        width: 100%;
+    }
 
     /*sec-two*/
 
     /*sec-three*/
 
     /*sec-for*/
-    .cards > div{
+    .cards>div {
         width: 67.7%;
         height: fit-content;
     }
-    
-    .contact-us{
+
+    .contact-us {
         width: 91.03%;
         padding: 35px 25px;
     }
